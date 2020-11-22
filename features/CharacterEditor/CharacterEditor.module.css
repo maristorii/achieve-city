@@ -1,0 +1,28 @@
+.Root {
+  display: flex;
+}
+
+.Character {
+  position: relative;
+  width: 400px;
+}
+
+.Img {
+  position: absolute;
+  width: 100%;
+}
+
+.ControlsRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ControlsRow:not(:first-child) {
+  margin-top: 8px;
+}
+
+.ControlText {
+  margin: 0 8px;
+}
