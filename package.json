@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "NEXT_PUBLIC_ENV=export && rm -rf docs && next build && next export && mv out docs"
+    "export": "rm -rf docs && NEXT_PUBLIC_ENV=export next build && next export && mv out docs"
   },
   "dependencies": {
     "next": "10.0.2",
