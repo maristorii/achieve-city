@@ -1,5 +1,6 @@
 import { useMemo, useCallback } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 import styles from './CharacterEditor.module.css';
 
@@ -40,6 +41,35 @@ const CharacterEditor = () => {
 
   return (
     <div className={styles.Root}>
+      <Head>
+        <link rel="preload" href={`${root}/images/character/backpack_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/bottom_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/bottom_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/bottom_2.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/bottom_3.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/cloak_1_back.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/cloak_1_front.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_2.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_3.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_4.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/eye_5.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/foot_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/foot_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/glasses_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/glasses_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_1.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_2.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_3.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_4.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_5.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_6.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/hair_7.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/top_0.png`} as="image" />
+        <link rel="preload" href={`${root}/images/character/top_1.png`} as="image" />
+      </Head>
       <div className={styles.Character}>
         <img src={`${root}/images/character/outline.png`} className={styles.Img} />
         {backpack !== 0 && <img src={`${root}/images/character/backpack_${backpack}.png`} className={styles.Img} />}
